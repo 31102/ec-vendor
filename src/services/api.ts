@@ -3,7 +3,7 @@ import { getCookie, removeCookie } from '../utils/cookies';
 
 // Create axios instance with base URL from environment variable
 const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://multi-vendor-backend-production.up.railway.app/api',
+  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api',
   headers: {
     'Content-Type': 'application/json',
   },
